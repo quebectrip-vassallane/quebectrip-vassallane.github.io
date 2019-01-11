@@ -27,6 +27,7 @@
     </td>
 
     <td width="100px" class="donation-meter">
+      <div id="days-counter"></div>
       <strong>Our Goal</strong> <strong class="goal">$6,000</strong>
       <span class="glass">
         <strong class="total" style="bottom: 2%">$180</strong>
@@ -39,3 +40,12 @@
     </td>
   </tr>
 </table>
+
+<script>
+  today = new Date();
+  var trip = new Date(2019, 3, 13);
+  var one_day = 1000 * 60 * 60 * 24;
+  var days = Math.ceil((trip.getTime() - today.getTime()) / one_day);
+  document.querySelector("#days-counter").innerText =
+    days + " days until the trip!";
+</script>
