@@ -16,7 +16,7 @@
           <p>
             The Vassal Lane French students are taking a trip to Quebec City
             Saturday from April 13 until Tuesday April 16, 2019 
-            which is <span id="days-counter"></span>.
+            which is <span id="days-counter"></span> days from now.
           </p>
   
           <p>
@@ -103,8 +103,7 @@
       var trip = new Date(2019, 3, 13);
       var one_day = 1000 * 60 * 60 * 24;
       var days = Math.ceil((trip.getTime() - today.getTime()) / one_day);
-      var text = days + " days from now!";
-      document.querySelector("#days-counter").innerText = text;
+      document.querySelector("#days-counter").innerText = days;
     </script>
   </body>
   
