@@ -4,8 +4,8 @@ body {
   font-family: Helvetica;
 }
 
-.content {
-  float: left;
+.wrapper {
+  max-width: 900px;
 }
 
 .donation-meter {
