@@ -85,10 +85,10 @@
         </td>
   
         <td width="100px" class="donation-meter">
-          <strong>Our Goal</strong> <strong class="goal">$6,000</strong>
+          <strong>Our Goal</strong> <strong class="goal"></strong>
           <span class="glass">
-            <strong class="total" style="bottom: 2%">$180</strong>
-            <span class="amount" style="height: 2%"></span>
+            <strong class="total raised-so-far"></strong>
+            <span class="amount raised-so-far"></span>
           </span>
           <div class="bulb">
             <span class="red-circle"></span>
@@ -104,6 +104,17 @@
       var one_day = 1000 * 60 * 60 * 24;
       var days = Math.ceil((trip.getTime() - today.getTime()) / one_day);
       document.querySelector("#days-counter").innerText = days;
+
+      // change this as we raise $$
+      var raisedSoFar = 180;
+
+      var goal = 6000;
+      var pct = raisedSoFar / goal * 100;
+      document.querySelector(".goal").innerText = `$${goal}`;
+      document.querySelector(".total").innerText = `$${raisedSoFar}`;
+      document.querySelector(".total").style.bottom = `${pct}%`;
+      document.querySelector(".amount").style.height = `${pct}%`;
+
     </script>
   </body>
   
