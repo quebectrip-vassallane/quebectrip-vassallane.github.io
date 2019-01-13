@@ -1,51 +1,110 @@
 <head>
-  <title>Vassal Lane French Trip</title>
-  <link rel="stylesheet" href="stylesheet.css" />
-</head>
-
-<div><img src="vlus_viper_logo.png" width="450" height="220" /></div>
-
-<table>
-  <tr>
-    <td width="50%" class="content">
-      <p>
-        The Vassal Lane French students are taking a trip to Quebec City
-        Saturday from April 13 until Tuesday April 16, 2019.
-      </p>
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Quebec_City_Montage_2016.jpg/500px-Quebec_City_Montage_2016.jpg"
-      />
-
-      <p>
-        Its an expensive trip and we are trying to raise money to reduce the
-        cost for families that couldn't otherwise attend and also reduce the
-        cost for all families.
-      </p>
-
-      <p>Please help us by <button>Make a Donation</button></p>
-    </td>
-
-    <td width="100px" class="donation-meter">
-      <div id="days-counter"></div>
-      <strong>Our Goal</strong> <strong class="goal">$6,000</strong>
-      <span class="glass">
-        <strong class="total" style="bottom: 2%">$180</strong>
-        <span class="amount" style="height: 2%"></span>
-      </span>
-      <div class="bulb">
-        <span class="red-circle"></span>
-        <span class="filler"> <span></span> </span>
-      </div>
-    </td>
-  </tr>
-</table>
-
-<script>
-  today = new Date();
-  var trip = new Date(2019, 3, 13);
-  var one_day = 1000 * 60 * 60 * 24;
-  var days = Math.ceil((trip.getTime() - today.getTime()) / one_day);
-  document.querySelector("#days-counter").innerText =
-    days + " days until the trip!";
-</script>
+    <title>Vassal Lane French Trip</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  
+  <body>
+  
+    <div>
+      <img src="vlus_viper_logo.png" width="450" height="220" />
+      <img src="https://static.quebecregion.com/media/1762249/facebook_%C3%A9t%C3%A92.jpg" width="450" height="220" />
+    </div>
+  
+    <table>
+      <tr>
+        <td width="50%" class="content">
+          <p>
+            The Vassal Lane French students are taking a trip to Quebec City
+            Saturday from April 13 until Tuesday April 16, 2019.
+          </p>
+  
+          <p>
+              It is an expensive trip and we are planning some fundraising to  
+              assist a few families that otherwise wouldn't be able to go and
+              bring down the cost for everyone.
+              
+              We set a goal of raising $6000 to support lowering the cost of the trip.  
+  
+              Here is a summary of the fundraising events we are organizing to help lower 
+              the costs of the French Trip to Quebec.  
+              I hope everyone can find a way to be part of an event in the upcoming months.    
+              There are a few families who have requested specific levels of financial aid 
+              but we recognized that the trip is expensive, so we hope to bring down the costs for everyone.
+            </p>
+      
+          <h3>How can I help?</h3>
+  
+          <p>
+            <b>The Silent Auction.</b>   
+            This takes place on Wednesday, January 23rd at Arts Night in room 322.  
+            We have two items donated at this time to auction off and <b>could use a few more</b>.  
+            Consider reaching out to businesses you know and asking for a donation.  
+            We can share a Google Form with you avoid multiple requests to the same businesses.
+            
+            Also don’t forget to stop by and bid on an item !
+          </p>
+            
+          <p>
+            <b>Bake Sale</b>   
+            We are also hosting a bake sale at the Arts Night.  
+            Mme Laura will recruit student volunteers to help sell things across the evening, 
+            but we really need parents to provide the food and drinks that we could sell.  
+            You can get out your baking pans or take a trip to Costco!  
+            
+            <a href="mailto:noragrodzins@gmail.com">Nora Grodzins (noragrodzins@gmail.com)</a>  has agreed to coordinate this event.  
+            She will be need parent volunteers to help supervise the Bake Sale for part of the time.  
+            This event will be a great way for student to get involved.
+          </p>
+            
+          <p>
+            <b>Raffle</b>  
+            We will hold a raffle starting in February.  
+            Kim Bernstein has volunteered to coordinate this. 
+            We hope to see students involved in helping to sell the tickets. 
+            
+            This website will be a key portal for coordinating this event.
+          </p>
+            
+          <p>  
+            <b>Cocktail Party</b> 
+            Finally we are planning a Cocktail Party at Rachel Cobb's home.  
+            This will be in mid March with exact date and time to be determined.  
+            
+            More information to come.
+          </p>
+                    
+          <p>
+            <b>Donations</b>
+            If you are connected to a generous corporation or business who would like to make a 
+            large scale donation that would be great.
+            Friends of VLUS has agreed to accept larger donations for the trip (which would be tax deductible).  
+            Be sure they write "Quebec Trip" on the memo line.  
+          </p>
+  
+        </td>
+  
+        <td width="100px" class="donation-meter">
+          <div id="days-counter"></div>
+          <strong>Our Goal</strong> <strong class="goal">$6,000</strong>
+          <span class="glass">
+            <strong class="total" style="bottom: 2%">$180</strong>
+            <span class="amount" style="height: 2%"></span>
+          </span>
+          <div class="bulb">
+            <span class="red-circle"></span>
+            <span class="filler"> <span></span> </span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  
+    <script>
+      today = new Date();
+      var trip = new Date(2019, 3, 13);
+      var one_day = 1000 * 60 * 60 * 24;
+      var days = Math.ceil((trip.getTime() - today.getTime()) / one_day);
+      document.querySelector("#days-counter").innerText =
+        days + " days until the trip!";
+    </script>
+  </body>
+  
